@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "mine.cpplint",
+        "qiumingge.cpp-check-lint",
+        "davidanson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one",
+        "xaver.clang-format",
+        "leodevbro.blockman",
+        "vivaxy.vscode-conventional-commits",
+        "jgclark.vscode-todo-highlight"
+    ]
+}
