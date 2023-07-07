@@ -1,15 +1,16 @@
 cmake_minimum_required(VERSION 3.20)
 
 # Setup vcpkg script with CMake (note: should be placed before project() call)
-# set(VCPKG_ROOT "${CMAKE_CURRENT_LIST_DIR}/tools/vcpkg")
-# set(CMAKE_TOOLCHAIN_FILE "${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
-# CACHE STRING "Vcpkg toolchain file")
+set(VCPKG_ROOT "${CMAKE_CURRENT_LIST_DIR}/tools/vcpkg")
+set(CMAKE_TOOLCHAIN_FILE
+    "${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+    CACHE STRING "Vcpkg toolchain file")
 
 project(tree_visibility)
 
 # Tree visibility application options
 option(TREE_VISIBILITY_BUILD_APP "Build the application" ON)
-option(TREE_VISIBILITY_BUILD_TEST "Build the tests" OFF)
+option(TREE_VISIBILITY_BUILD_TEST "Build the tests" ON)
 option(TREE_VISIBILITY_BUILD_TEST_COVERAGE "Build the test coverage" OFF)
 
 if(PROJECT_IS_TOP_LEVEL)
