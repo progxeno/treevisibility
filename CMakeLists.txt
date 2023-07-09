@@ -11,7 +11,6 @@ project(tree_visibility)
 # Tree visibility application options
 option(TREE_VISIBILITY_BUILD_APP "Build the application" ON)
 option(TREE_VISIBILITY_BUILD_TEST "Build the tests" ON)
-option(TREE_VISIBILITY_BUILD_TEST_COVERAGE "Build the test coverage" OFF)
 
 if(PROJECT_IS_TOP_LEVEL)
   # Export compile commands for clang-tidy
