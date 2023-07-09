@@ -50,50 +50,43 @@ cd treevisibility
 
 ## Build the Application
 
-### Using CMake
+### Using Makefile
 
-1. Create a build directory:
+To display the available options:
 
 ```bash
-mkdir build
+make help
+```
+
+1. Build the application:
+
+```bash
+make app-build
+```
+
+2. Run the application:
+
+```bash
+mkdir app-run
 cd build
 ```
 
-2. Generate the build files with CMake:
+3. Run applicatio with example input file:
 
 ```bash
-cmake ..
+make app-example
 ```
 
-3. Build the application:
+4. Build application with tests:
 
 ```bash
-cmake --build .
+make all-build
 ```
 
-## Run the Application
-
-After building the application, you can run it with the provided example input file:
+5. Run tests:
 
 ```bash
-./cmd/bin/tree_visibility-app < example/input
-```
-
-You can also manually enter the input through the terminal, following the format specified in the prompt.
-
-The application will calculate the orientation angle that maximizes the number of visible trees and display the result on the terminal.
-
-## Example Input
-
-An example input file (`example/input`) is provided in the repository. You can use this file to test the application:
-
-```
-3.5 3.5 50
-4
-0.0 0.0
-1.5 15
--2.15 5
--4 -2
+make test-run
 ```
 
 ## License
