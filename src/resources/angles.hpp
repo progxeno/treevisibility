@@ -20,8 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#ifndef CONSTANT_HPP
-#define CONSTANT_HPP
+#ifndef SRC_RESOURCES_ANGLES_HPP_
+#define SRC_RESOURCES_ANGLES_HPP_
 
 #include <cmath>
 
@@ -30,4 +30,4 @@ constexpr double kViewFactor = 0.5;
 constexpr double kStep = 0.1;
 } // namespace Angles
 
-#endif // CONSTANT_HPP
+#endif // SRC_RESOURCES_ANGLES_HPP_
